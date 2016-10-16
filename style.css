@@ -1,0 +1,45 @@
+* {
+  transition: all 0.2s;
+}
+body {
+  background-color: #3c4252;
+  color: white;
+  font-family: '微软雅黑';
+}
+.dashboard {
+  width: 800px;
+  margin: 200px auto;
+}
+.dashboard .dashitem {
+  text-align: center;
+  vertical-align: center;
+  font-size: 28px;
+  cursor: pointer;
+}
+.dashboard .dashitem .glyphicon {
+  font-size: 128px;
+  color: #00D2CA;
+  margin: 0 auto;
+}
+.dashboard .dashitem .dashitem-title {
+  border-radius: 5px;
+  padding: 0 6px 6px 6px;
+}
+.dashboard .dashitem:hover .glyphicon {
+  color: #e71e62;
+  text-shadow: 1px 1px 3px black;
+}
+.dashboard .dashitem:hover .dashitem-title {
+  background-color: #e71e62;
+  box-shadow: 1px 1px 3px black;
+}
+.news {
+  margin-top: 130px;
+}
+.news .input-group {
+  margin: 2px auto;
+}
+footer {
+  color: #999;
+  text-align: center;
+}
