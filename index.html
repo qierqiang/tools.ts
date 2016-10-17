@@ -5,23 +5,23 @@
 	<meta charset="UTF-8">
 	<title>工具</title>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 	<div class="dashboard container">
 		<div class="row">
-			<div class="dashitem col-md-4">
+			<div class="dashitem col-md-4" data-toggle="modal" data-target="#todoDialog">
 				<span class="glyphicon glyphicon-bell"></span>
 				<br>
 				<span class="dashitem-title">待办提醒</span>
 			</div>
-			<div class="dashitem col-md-4">
+			<div class="dashitem col-md-4" data-toggle="modal" data-target="#annoDialog">
 				<span class="glyphicon glyphicon-bullhorn"></span>
 				<br>
 				<span class="dashitem-title">交警公告</span>
 			</div>
-			<div class="dashitem col-md-4">
+			<div class="dashitem col-md-4" data-toggle="modal" data-target="#flowerDialog">
 				<span class="glyphicon glyphicon-tree-deciduous"></span>
 				<br>
 				<span class="dashitem-title">浇花提醒</span>
@@ -29,8 +29,114 @@
 		</div>
 	</div>
 
-	<footer>戚尔强 2016</footer>
+	<div class="log container">
+		<div class="row">
+			<div class=" col-md-8 col-md-offset-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">日志
+						<button type="button" class="close"><span class="glyphicon glyphicon-trash"></span></button>
+					</div>
+					<div class="panel-body">
+						<dl id="log" class="dl-horizontal">
+							<dt>2016-10-17 21:50</dt>
+							<dd class="text-success">查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+							<dt>2016-10-17 21:50</dt>
+							<dd>查询系统待办完成，没有新的待办。</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="todoDialog" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">待办提醒</h4>
+				</div>
+				<div class="modal-body">
+					<a href="javascript:;" class="list-group-item">【业务一部系统反馈】请信息部审核：</a>
+					<a href="javascript:;" class="list-group-item">【业务二部系统反馈】请信息部审核：</a>
+					<a href="javascript:;" class="list-group-item">【业务三部系统反馈】请信息部审核：</a>
+					<a href="javascript:;" class="list-group-item">【业务四部系统反馈】请信息部审核：</a>
+					<a href="javascript:;" class="list-group-item">【提交需求负责人审核】长丰县公管局关于使用光大银行保证金的需...</a>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-new-window"></span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="annoDialog" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">交警公告</h4>
+				</div>
+				<div class="modal-body">
+					<div id="anno-list" class="list-group">
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+						<a href="javascript:;" class="list-group-item">交通违法曝光公告2016年第76期 （总第1062期）</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-new-window"></span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="flowerDialog" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body">
+					<iframe src="flowers.html" frameborder="0" width="100%" height="100%"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer>戚尔强@2016</footer>
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	<script src="index.js"></script>
 </body>
 

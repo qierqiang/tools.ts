@@ -9,11 +9,10 @@ body {
 }
 
 @shadow :1px 1px 3px black;
-
 .dashboard {
     width: 800px;
     // height: 300px;
-    margin: 200px auto;
+    margin: 100px auto;
     .dashitem {
         text-align: center;
         vertical-align: center;
@@ -41,14 +40,51 @@ body {
     }
 }
 
-.news{
-    margin-top: 130px;
-    .input-group{
-        margin: 2px auto;
+.log {
+    margin-top: 30px;
+    color: black;
+    .panel-body {
+        height: 230px;
+        overflow: scroll;
     }
 }
 
-footer{
+.modal {
+    color: black;
+}
+
+#todoDialog {
+    .modal-dialog{
+        margin: 130px auto;
+    }
+    .modal-body {
+        height: 250px;
+        overflow: scroll;
+    }
+}
+
+#annoDialog {
+    .modal-body {
+        height: 550px;
+        overflow: scroll;
+    }
+    .list-group-item {
+        padding: 3px 15px;
+    }
+}
+
+#flowerDialog {
+    .modal-dialog {
+        margin: 2px auto;
+        .modal-body {
+            height: 745px;
+            padding: 0px;
+            overflow: hidden;
+        }
+    }
+}
+
+footer {
     color: #999;
     text-align: center;
 }

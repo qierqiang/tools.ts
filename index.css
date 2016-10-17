@@ -8,7 +8,7 @@ body {
 }
 .dashboard {
   width: 800px;
-  margin: 200px auto;
+  margin: 100px auto;
 }
 .dashboard .dashitem {
   text-align: center;
@@ -33,11 +33,38 @@ body {
   background-color: #e71e62;
   box-shadow: 1px 1px 3px black;
 }
-.news {
-  margin-top: 130px;
+.log {
+  margin-top: 30px;
+  color: black;
 }
-.news .input-group {
+.log .panel-body {
+  height: 230px;
+  overflow: scroll;
+}
+.modal {
+  color: black;
+}
+#todoDialog .modal-dialog {
+  margin: 130px auto;
+}
+#todoDialog .modal-body {
+  height: 250px;
+  overflow: scroll;
+}
+#annoDialog .modal-body {
+  height: 550px;
+  overflow: scroll;
+}
+#annoDialog .list-group-item {
+  padding: 3px 15px;
+}
+#flowerDialog .modal-dialog {
   margin: 2px auto;
+}
+#flowerDialog .modal-dialog .modal-body {
+  height: 745px;
+  padding: 0px;
+  overflow: hidden;
 }
 footer {
   color: #999;
